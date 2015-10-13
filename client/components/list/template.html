@@ -1,0 +1,25 @@
+<div>
+    <ul class="breadcrumb">
+        <li><a href="javascript:void(0)">Jobs</a></li>
+    </ul>
+    <h1>
+        Jobs
+        <button class="btn btn-info pull-right">Create</button>
+    </h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Name</th>
+                <th>Last Success</th>
+                <th>Last Finished</th>
+                <th>Last Duration</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: list">
+            <tr>
+                <td class="mdl-data-table__cell--non-numeric" data-bind="text: $data"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
